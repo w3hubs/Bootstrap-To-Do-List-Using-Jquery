@@ -1,13 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Bootstrap To-Do List Using Jquery</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-    <style>
+<head>
+<title>Bootstrap To-Do List Using Jquery</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+<style>
       @import url('https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap');
       body{
       font-family: "Nunito Sans";
@@ -57,36 +58,36 @@
       background: #1597E5;
       }
     </style>
-  </head>
-  <body>
-    <div class="container mt-5">
-      <div class="card">
-        <div class="bg-custom text-white">
-          <div class="card-header">
-            <div class="row align-items-center">
-              <div class="col-6">
-                <h4 class="m-0">To-Do List</h4>
-              </div>
-              <div class="col-6">
-                <a href="javascript:void(0);" id="removeAllLi" align="right" style="font-size:16px;font-weight:bold;color:#fff;float:right;"> <i class="fa fa-hand-o-left"  aria-hidden="true"></i> Clear All</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card-body">
-          <input type="hidden" id="toDoListNo" placeholder="Type Ur To Do List" class="form-control">
-          <input type="text" id="toDoList" placeholder="Type Ur To Do List" class="form-control">
-        </div>
-        <div class="todo-data" id="listing">
-          <ul></ul>
-        </div>
-      </div>
-    </div>
-  </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script>
+</head>
+<body>
+<div class="container mt-5">
+<div class="card">
+<div class="bg-custom text-white">
+<div class="card-header">
+<div class="row align-items-center">
+<div class="col-6">
+<h4 class="m-0">To-Do List</h4>
+</div>
+<div class="col-6">
+<a href="javascript:void(0);" id="removeAllLi" align="right" style="font-size:16px;font-weight:bold;color:#fff;float:right;"> <i class="fa fa-hand-o-left" aria-hidden="true"></i> Clear All</a>
+</div>
+</div>
+</div>
+</div>
+<div class="card-body">
+<input type="hidden" id="toDoListNo" placeholder="Type Ur To Do List" class="form-control">
+<input type="text" id="toDoList" placeholder="Type Ur To Do List" class="form-control">
+</div>
+<div class="todo-data" id="listing">
+<ul></ul>
+</div>
+</div>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" type="text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" type="text/javascript"></script>
+<script type="text/javascript">
     $("#toDoList").keypress(function(e) {
       
         if(e.which === 13) {
@@ -117,7 +118,7 @@
     
         let dataLenght = $(e).attr('data-lenght');
     
-        $("#listing ul li i.fa-trash").each(function () {
+        $("#listing ul li i.fa-trash-alt").each(function () {
     
             let CheckLenght = $(this).attr('data-lenght');
     
@@ -158,4 +159,4 @@
     
     })
   </script>
-</html>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="-|49" defer=""></script></html>
