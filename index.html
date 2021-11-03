@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -98,7 +99,7 @@
     
             if($(this).val() !== "" && $('#toDoListNo').val() == "") {
     
-                $("#listing ul").append("<li class="+listLenght+" data-liLenght="+listLenght+">" + todoText + " <span align='right'> <i class='far fa-edit' style='color:#5C7AEA;float:right;' data-text = "+todoText+" data-lenght='"+listLenght+"' onclick='editList(this)'> </i>  <i class='fas fa-trash-alt' style='color:#FF5C58;float:right;' data-lenght='"+listLenght+"' onclick='removeList(this)'> </i></span></li>");
+                $("#listing ul").append("<li class="+listLenght+" data-liLenght="+listLenght+">" + todoText + " <span align='right'> <i class='far fa-edit' style='color:#5C7AEA;float:right;' data-text = '"+todoText+"' data-lenght='"+listLenght+"' onclick='editList(this)'> </i>  <i class='fas fa-trash-alt' style='color:#FF5C58;float:right;' data-lenght='"+listLenght+"' onclick='removeList(this)'> </i></span></li>");
         
             } else {
     
@@ -146,7 +147,7 @@
         $("#listing ul li").each(function () {
             let CheckLenght = $(this).attr('data-liLenght');
             if(toDoListNo==CheckLenght){
-                $("#listing ul").parent().parent().find($('.'+toDoListNo+'').html(""+todoText+"  <span align='right'> <i class='far fa-edit' style='color:#5C7AEA;float:right;' data-text = "+todoText+" data-lenght="+toDoListNo+" onclick='editList(this)'> </i> <i class='fas fa-trash-alt' style='color:#FF5C58;float:right;' data-lenght="+toDoListNo+" onclick='removeList(this)'> </i> </span>"));
+                $("#listing ul").parent().parent().find($('.'+toDoListNo+'').html(""+todoText+"  <span align='right'> <i class='far fa-edit' style='color:#5C7AEA;float:right;' data-text = '"+todoText+"' data-lenght="+toDoListNo+" onclick='editList(this)'> </i> <i class='fas fa-trash-alt' style='color:#FF5C58;float:right;' data-lenght="+toDoListNo+" onclick='removeList(this)'> </i> </span>"));
             
             }
         })
@@ -159,4 +160,3 @@
     
     })
   </script>
-<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="-|49" defer=""></script></html>
